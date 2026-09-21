@@ -18,7 +18,7 @@ npm test         # vitest, jsdom + Testing Library
 - `hooks/useWordSearch.ts` — debounce → fetch → race-condition handling, decoupled from the UI so it's unit-testable on its own.
 - `hooks/useDebouncedValue.ts` — small generic debounce hook.
 - `lib/wordsApi.ts` — the only file that knows about Datamuse; swap it for any other API without touching the component.
-- `components/TypeaheadSearch.test.tsx` — behavioral tests (see write-up).
+- `components/TypeaheadSearch.test.tsx` — behavioral tests.
 
----
+See [WRITEUP.md](./WRITEUP.md) for tradeoffs, scaling notes, and testing approach.
 
